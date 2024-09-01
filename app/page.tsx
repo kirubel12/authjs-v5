@@ -1,3 +1,6 @@
+import LoginButton from "@/components/auth/login-button";
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <main className="flex h-full flex-col items-center justify-center bg-[#ffbb5e]">
@@ -6,6 +9,13 @@ export default function Home() {
           🔐 Auth
         </h1>
         <p className="text-lg">A simple Authentication service</p>
+        <div>
+          <LoginButton>
+            <Button variant="default" size="lg">
+              Login
+            </Button>
+          </LoginButton>
+        </div>
       </div>
     </main>
   );
